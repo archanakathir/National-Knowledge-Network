@@ -1,0 +1,30 @@
+.image1
+{
+
+background-image:url(bg.png);
+background-repeat:no-repeat;
+background-size:100% 900px;
+}
+
+.border1
+{
+
+width:275px;
+height:900px;
+	margin:100px auto;
+	padding:20px 40px;
+	border:1px solid #f4f4f4;
+	background:rgba(255,255,255,.5);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	
+	-webkit-box-shadow: 0 0 2px #aaa;
+	-moz-box-shadow: 0 0 2px #aaa;
+	box-shadow: 0 0 2px #aaa;
+}
+
+
+
+
+

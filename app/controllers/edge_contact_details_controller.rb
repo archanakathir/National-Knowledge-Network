@@ -1,0 +1,2 @@
+class EdgeContactDetailsController < ApplicationController
+end

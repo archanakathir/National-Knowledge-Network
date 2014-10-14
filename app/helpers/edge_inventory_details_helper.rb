@@ -1,0 +1,2 @@
+module EdgeInventoryDetailsHelper
+end

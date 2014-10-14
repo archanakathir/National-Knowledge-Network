@@ -1,0 +1,28 @@
+<div class="image1">
+<div class="border1">
+<center>
+
+	<h2>Sign In</h2>
+	<%= form_for :user do |f| %>
+  	<p>
+    	<%= f.text_field :username, :placeholder=> "username" %>
+ 	 </p>
+  	<p>
+    
+    	<%= f.password_field :password , :placeholder=> "password" %>
+  	</p>
+  	<p>
+    	<%= f.submit 'Sign In' %>&nbsp;&nbsp;&nbsp;
+    	<%= f.submit 'Clear Form', :type => 'reset' %>
+
+ 	</p>
+
+	
+</center>
+<% end %>
+</div>
+</div>
+
+
+
+
