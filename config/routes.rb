@@ -1,13 +1,33 @@
 Rails.application.routes.draw do
+  resources :lists
+
+  resources :nations
+
+  resources :states
+
+  resources :state_details5s
+
+  resources :items
+
+  resources :statedetails
+
+  resources :products
+
+  resources :states_details
+
+  resources :states2s
+
+  resources :state_details
+
+  resources :statesses
+
   devise_for :admins
   devise_for :users
   get 'home1/index'
   root 'homes#index'
 
-get 'state_details/index'
-get 'state_details2/index'
-get 'state_details3/index'
-get 'state_details4/index'
+get 'statesses/index'
+
 get 'nlds/index'
 
 
@@ -53,7 +73,7 @@ get '/division' => "division#index"
 get '/home1' => "home1#index"
 get '/edge_inventory_details' => "edge_inventory_details#index"
 get '/states'=> "states#index"
-get '/state_details'=> "state_details#index"
+get '/statesses'=> "statesses#index"
 get '/state_details2'=> "state_details2#index"
 get '/state_details3'=> "state_details3#index"
 get '/state_details4'=> "state_details4#index"

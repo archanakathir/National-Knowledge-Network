@@ -1,0 +1,60 @@
+// Place all the styles related to the state_details controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+table,td,th
+{
+border:1px solid green;
+}
+
+th
+{
+background-color:green;
+color :white;
+}
+.border3
+{
+  border-style:ridge;
+  border-width: 1px;
+  border-color: green;
+  width: 50%;
+  height:50%;
+}
+#states
+{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#states th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: #ffffff;
+}
+#states tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+}
+
+#states1
+{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 25%;
+    border-collapse: collapse;
+}
+
+#states1 th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: #ffffff;
+}
+#states1 tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+}

@@ -1,0 +1,2 @@
+module StateDetails5sHelper
+end
