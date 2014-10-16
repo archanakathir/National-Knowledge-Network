@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141015184514) do
+ActiveRecord::Schema.define(version: 20141016091334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,9 +66,22 @@ ActiveRecord::Schema.define(version: 20141015184514) do
     t.datetime "updated_at"
   end
 
+  create_table "national_long_distances", force: true do |t|
+    t.string   "nld_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "nations", force: true do |t|
     t.string   "state"
     t.string   "state_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "nlds", force: true do |t|
+    t.string   "NLD"
+    t.string   "Name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -80,14 +93,22 @@ ActiveRecord::Schema.define(version: 20141015184514) do
     t.datetime "updated_at"
   end
 
-  create_table "statelists", force: true do |t|
-    t.string   "sate_id"
+  create_table "state_details", force: true do |t|
+    t.string   "state"
     t.string   "state_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "states", force: true do |t|
+    t.string   "state"
+    t.string   "state_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "things", force: true do |t|
+    t.string   "state"
     t.string   "state_name"
     t.datetime "created_at"
     t.datetime "updated_at"

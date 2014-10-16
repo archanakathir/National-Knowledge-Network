@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :national_long_distances
+
+  resources :nls
+
+  resources :nlds
+
+  resources :things
+
   resources :lists
 
   resources :nations

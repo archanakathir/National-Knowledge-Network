@@ -1,0 +1,2 @@
+module NationalLongDistancesHelper
+end
