@@ -1,0 +1,25 @@
+<%= form_for(@isp_d) do |f| %>
+  <% if @isp_d.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@isp_d.errors.count, "error") %> prohibited this isp_d from being saved:</h2>
+
+      <ul>
+      <% @isp_d.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :isp %><br>
+    <%= f.text_field :isp %>
+  </div>
+  <div class="field">
+    <%= f.label :isp_name %><br>
+    <%= f.text_field :isp_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

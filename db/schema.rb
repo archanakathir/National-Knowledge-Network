@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141016091334) do
+ActiveRecord::Schema.define(version: 20141016101026) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,40 @@ ActiveRecord::Schema.define(version: 20141016091334) do
 
   create_table "groups", force: true do |t|
     t.string   "institute_group"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "isp_details", force: true do |t|
+    t.string   "isp_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "isp_ds", force: true do |t|
+    t.string   "isp"
+    t.string   "isp_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "isps", force: true do |t|
+    t.string   "isp"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "isps1s", force: true do |t|
+    t.string   "isp_id"
+    t.string   "isp_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "isps_details", force: true do |t|
+    t.string   "isp"
+    t.string   "isp_name"
+    t.string   "ckt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

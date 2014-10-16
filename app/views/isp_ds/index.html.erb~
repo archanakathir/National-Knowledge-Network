@@ -1,0 +1,27 @@
+<h1>Listing ISP</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Isp</th>
+      <th>Isp name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @isp_ds.each do |isp_d| %>
+      <tr>
+        <td><%= isp_d.isp %></td>
+        <td><%= isp_d.isp_name %></td>
+        <td><%= link_to 'Show', isp_d %></td>
+        <td><%= link_to 'Edit', edit_isp_d_path(isp_d) %></td>
+        <td><%= link_to 'Destroy', isp_d, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Isp d', new_isp_d_path %>

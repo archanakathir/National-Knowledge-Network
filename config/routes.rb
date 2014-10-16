@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :isps_details
+
+  resources :isp_ds
+
+  resources :isp_details
+
+  resources :isps1s
+
+  resources :isps
+
   resources :national_long_distances
 
   resources :nls
