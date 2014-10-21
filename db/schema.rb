@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141016101026) do
+ActiveRecord::Schema.define(version: 20141020094903) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,48 @@ ActiveRecord::Schema.define(version: 20141016101026) do
 
   create_table "groups", force: true do |t|
     t.string   "institute_group"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "institue_categories", force: true do |t|
+    t.string   "category"
+    t.string   "category_name"
+    t.string   "ckt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "institue_categories1s", force: true do |t|
+    t.string   "category"
+    t.string   "category_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "internets", force: true do |t|
+    t.string   "LoopBack4_IP"
+    t.string   "LoopBack6_IP"
+    t.string   "Public_Segment4_IP"
+    t.string   "Public_Segment6_IP"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ip_details", force: true do |t|
+    t.string   "LoopBack4_IP"
+    t.string   "LoopBack6_IP"
+    t.string   "Public_Segment4_IP"
+    t.string   "Public_Segment6_IP"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ips", force: true do |t|
+    t.string   "LoopBack4_IP"
+    t.string   "LoopBack6_IP"
+    t.string   "Public_Segment4_IP"
+    t.string   "Public_Segment6_IP"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -109,13 +151,6 @@ ActiveRecord::Schema.define(version: 20141016101026) do
   create_table "nations", force: true do |t|
     t.string   "state"
     t.string   "state_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "nlds", force: true do |t|
-    t.string   "NLD"
-    t.string   "Name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
