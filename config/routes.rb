@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :nlds_details
+
   resources :isps_details
 
   resources :isp_ds
