@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  LoopBack4_IP: MyString
+  LoopBack6_IP: MyString
+  Public_Segment4_ip: MyString
+  Public_Segment6_ip: MyString
+
+two:
+  LoopBack4_IP: MyString
+  LoopBack6_IP: MyString
+  Public_Segment4_ip: MyString
+  Public_Segment6_ip: MyString

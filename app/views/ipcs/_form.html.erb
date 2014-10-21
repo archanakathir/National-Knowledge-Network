@@ -1,0 +1,33 @@
+<%= form_for(@ipc) do |f| %>
+  <% if @ipc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ipc.errors.count, "error") %> prohibited this ipc from being saved:</h2>
+
+      <ul>
+      <% @ipc.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :LoopBack4_IP %><br>
+    <%= f.text_field :LoopBack4_IP %>
+  </div>
+  <div class="field">
+    <%= f.label :LoopBack6_IP %><br>
+    <%= f.text_field :LoopBack6_IP %>
+  </div>
+  <div class="field">
+    <%= f.label :Public_Segment4_ip %><br>
+    <%= f.text_field :Public_Segment4_ip %>
+  </div>
+  <div class="field">
+    <%= f.label :Public_Segment6_ip %><br>
+    <%= f.text_field :Public_Segment6_ip %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

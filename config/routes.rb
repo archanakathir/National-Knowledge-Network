@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :category_details
+
+  resources :ipcs
+
+  resources :ips_details
+
+  resources :ip_details
+
   resources :nlds_details
 
   resources :isps_details

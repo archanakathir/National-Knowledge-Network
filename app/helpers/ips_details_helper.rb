@@ -1,0 +1,2 @@
+module IpsDetailsHelper
+end
